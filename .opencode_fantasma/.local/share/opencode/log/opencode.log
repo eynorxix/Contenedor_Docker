@@ -1,0 +1,30 @@
+timestamp=2026-10-25T22:17:09.923Z level=INFO run=75655135 message="creating instance" directory=/workspace
+timestamp=2026-10-25T22:17:09.925Z level=INFO run=75655135 message=fromDirectory directory=/workspace
+timestamp=2026-10-25T22:17:09.983Z level=INFO run=75655135 message=bootstrapping directory=/workspace
+timestamp=2026-10-25T22:17:09.991Z level=INFO run=75655135 message=loading path=/root/.config/opencode/config.json
+timestamp=2026-10-25T22:17:09.992Z level=INFO run=75655135 message=loading path=/root/.config/opencode/opencode.json
+timestamp=2026-10-25T22:17:09.995Z level=INFO run=75655135 message=loading path=/root/.config/opencode/opencode.jsonc
+timestamp=2026-10-25T22:17:10.220Z level=INFO run=75655135 message=loading path=/root/.opencode/opencode.json
+timestamp=2026-10-25T22:17:10.220Z level=INFO run=75655135 message=loading path=/root/.opencode/opencode.jsonc
+timestamp=2026-10-25T22:17:10.254Z level=INFO run=75655135 message="all LSPs are disabled"
+timestamp=2026-10-25T22:17:10.255Z level=INFO run=75655135 message="all formatters are disabled"
+timestamp=2026-10-25T22:17:10.255Z level=INFO run=75655135 message=init
+timestamp=2026-10-25T22:17:12.570Z level=INFO run=75655135 message=init count=1
+timestamp=2026-10-25T22:17:12.654Z level=INFO run=75655135 message="watcher backend" directory=/workspace platform=linux backend=inotify
+timestamp=2026-10-25T22:17:12.670Z level=INFO run=75655135 message="project copy refresh started" projectID=global
+timestamp=2026-10-25T22:17:12.672Z level=INFO run=75655135 message="project copy refresh done" projectID=global updated=[] removed=[]
+timestamp=2026-10-25T22:17:12.707Z level=INFO run=75655135 message="booting location services" directory=/workspace workspaceID=undefined
+timestamp=2026-10-25T22:17:22.885Z level=INFO run=75655135 message=created id=ses_e8adc333affeecU69vcnzp9Z8P slug=kind-river version=1.19.4 projectID=global directory=/workspace path=workspace workspaceID=undefined parentID=undefined title="New session - 2026-10-25T22:17:22.885Z" agent=build model.id=big-pickle model.providerID=opencode metadata=undefined permission=undefined cost=0 tokens.input=0 tokens.output=0 tokens.reasoning=0 tokens.cache.read=0 tokens.cache.write=0 time.created=1792966642885 time.updated=1792966642885
+timestamp=2026-10-25T22:17:22.953Z level=INFO run=75655135 message=loop session.id=ses_e8adc333affeecU69vcnzp9Z8P step=0
+timestamp=2026-10-25T22:17:22.974Z level=INFO run=75655135 message="shell tool using shell" shell=/bin/sh
+timestamp=2026-10-25T22:17:23.016Z level=INFO run=75655135 message=stream providerID=opencode modelID=big-pickle session.id=ses_e8adc333affeecU69vcnzp9Z8P small=true agent=title mode=primary
+timestamp=2026-10-25T22:17:23.030Z level=INFO run=75655135 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=big-pickle
+timestamp=2026-10-25T22:17:23.078Z level=INFO run=75655135 message="watcher backend" directory=/workspace platform=linux backend=inotify
+timestamp=2026-10-25T22:17:23.090Z level=INFO run=75655135 message="project copy refresh started" projectID=global
+timestamp=2026-10-25T22:17:23.091Z level=INFO run=75655135 message="project copy refresh done" projectID=global updated=[] removed=[]
+timestamp=2026-10-25T22:17:23.093Z level=INFO run=75655135 message="booting location services" directory=/workspace workspaceID=undefined
+timestamp=2026-10-25T22:17:23.748Z level=INFO run=75655135 message=process session.id=ses_e8adc333affeecU69vcnzp9Z8P messageID=msg_17523cd0d001EDrD4FIK2iqucb
+timestamp=2026-10-25T22:17:23.750Z level=INFO run=75655135 message=stream providerID=opencode modelID=big-pickle session.id=ses_e8adc333affeecU69vcnzp9Z8P small=false agent=build mode=primary
+timestamp=2026-10-25T22:17:23.752Z level=INFO run=75655135 message="llm runtime selected" llm.runtime=ai-sdk llm.provider=opencode llm.model=big-pickle
+timestamp=2026-10-25T22:17:24.611Z level=ERROR run=75655135 message="stream error" providerID=opencode modelID=big-pickle session.id=ses_e8adc333affeecU69vcnzp9Z8P small=false agent=build mode=primary error.error="AI_APICallError: Free usage limit reached. Free models work in OpenCode (https://opencode.ai); subscribe to OpenCode Go to keep going: https://opencode.ai/go"
+timestamp=2026-10-25T22:17:31.686Z level=ERROR run=75655135 message="stream error" providerID=opencode modelID=big-pickle session.id=ses_e8adc333affeecU69vcnzp9Z8P small=true agent=title mode=primary error.error="AI_RetryError: Failed after 3 attempts. Last error: Free usage limit reached. Free models work in OpenCode (https://opencode.ai); subscribe to OpenCode Go to keep going: https://opencode.ai/go"

@@ -1,0 +1,24 @@
+services:
+  opencode:
+    image: ghcr.io/anomalyco/opencode:latest
+    container_name: opencode_environment
+    stdin_open: true
+    tty: true
+    # Hereda directamente la interfaz de red de la laptop (ProtonVPN)
+    network_mode: host
+    environment:
+      - DBUS_SESSION_BUS_ADDRESS=/dev/null
+      - OPENCODE_DISABLE_TELEMETRY=1
+      - NODE_OPTIONS=--dns-result-order=ipv4first --no-warnings
+    volumes:
+      # Montaje del proyecto actual
+      - /home/eynor/Documents/2_Proyect_Private/8_Opencode:/workspace
+      # Persistencia de archivos de configuración dentro de la carpeta fantasma
+      - /home/eynor/.opencode_fantasma_global/.config:/root/.config
+      - /home/eynor/.opencode_fantasma_global/.local/share:/root/.local/share
+      - /home/eynor/.opencode_fantasma_global/.cache:/root/.cache
+      - /home/eynor/.opencode_fantasma_global/.opencode:/root/.opencode
+      - /home/eynor/.opencode_fantasma_global/machine-id:/etc/machine-id:ro
+      - /home/eynor/.opencode_fantasma_global/machine-id:/var/lib/dbus/machine-id:ro
+    working_dir: /workspace
+    # Sin restricciones de CPU, memoria RAM ni límites de procesos (PIDs)
